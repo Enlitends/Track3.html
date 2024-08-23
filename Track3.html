@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping MP3 from Google Drive</title>
+</head>
+<body>
+    <h1>Looping MP3 Audio</h1>
+    <audio id="audioPlayer" controls autoplay loop>
+        <source src="https://docs.google.com/uc?export=download&id=1EZkHHxI-pOXluFFD0as0mBfy-l3DJ5F9" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // JavaScript code to ensure the audio plays in loop
+        var audio = document.getElementById('audioPlayer');
+        audio.loop = true;
+        audio.play();
+    </script>
+</body>
+</html>
